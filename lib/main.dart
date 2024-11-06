@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             newUri = Uri(
                                   scheme: link.scheme,
                                   host: link.host,
-                                  path: uri.path);
+                                  path: 'md_example/${uri.path}');
                           }
                           return Image.network((newUri ?? uri).toString());
                         });
